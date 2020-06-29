@@ -4,7 +4,15 @@ import {Redirect, Route, Switch, useHistory} from "react-router-dom";
 import ReactGA from 'react-ga';
 
 import {library} from '@fortawesome/fontawesome-svg-core';
-import {faAngleRight, faCheck, fas, faSuitcase, faTimes} from '@fortawesome/free-solid-svg-icons';
+import {
+  faAngleRight,
+  faCheck,
+  faDollarSign,
+  faExclamation,
+  fas,
+  faSuitcase,
+  faTimes
+} from '@fortawesome/free-solid-svg-icons';
 
 import {HomeView} from "./views/HomeView";
 import {ProjectsView} from "./views/ProjectsView";
@@ -18,6 +26,8 @@ import MuiTheme from './theme';
 library.add(
   fas,
   faCheck,
+  faDollarSign,
+  faExclamation,
   faSuitcase,
   faTimes,
   faAngleRight
@@ -33,7 +43,7 @@ function App() {
     <ThemeProvider theme={MuiTheme}>
       <Switch>
         <Route exact path="/inicio">
-          <Layout children={<HomeView/>}/>
+          <Layout longHeader children={<HomeView/>}/>
         </Route>
         <Route exact path="/proyectos">
           <Layout children={<ProjectsView/>}/>
