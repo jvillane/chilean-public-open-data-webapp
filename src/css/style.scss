@@ -1,3 +1,18 @@
+body {
+  background: #193E6F;
+  color: #fff;
+  font-family: 'Scope One', serif;
+
+}
+h1 {
+  font-size: 60px;
+  span{
+    color: #FFE800;
+  }
+}
+
+
+
 @media (min-width: 1100px) {
   .MuiContainer-maxWidthLg {
     max-width: 1100px;

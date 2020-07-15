@@ -1,6 +1,7 @@
 import React from 'react';
 import {useHistory} from "react-router-dom";
 import ReactGA from 'react-ga';
+import './css/style.scss';
 
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {
