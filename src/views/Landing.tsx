@@ -1,6 +1,6 @@
 import React from "react";
 import {Container, Typography} from "@material-ui/core";
-import Lottie from 'react-lottie';
+import Lottie from "lottie-react-web";
 import animation from "../lottie/digital-marketing.json";
 
 export const Landing: React.FC = () => {
@@ -13,6 +13,7 @@ export const Landing: React.FC = () => {
       preserveAspectRatio: 'xMidYMid slice'
     }
   };
+
   return (
     <main className="hero-wrapper--content">
       <div className="bg-composed-wrapper--bg bg-white opacity-5"/>
