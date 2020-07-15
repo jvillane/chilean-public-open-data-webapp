@@ -2,14 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import axios from 'axios';
 import ReactGA from 'react-ga';
 import {BrowserRouter as Router} from "react-router-dom";
 
 ReactGA.initialize('UA-170181856-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
-
-axios.defaults.baseURL = 'https://raw.githubusercontent.com/jvillane/chilean-public-open-data/master';
 
 ReactDOM.render(
   <React.StrictMode>

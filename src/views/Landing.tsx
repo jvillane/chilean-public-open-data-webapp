@@ -1,13 +1,14 @@
 import React from "react";
 import {Container, Typography} from "@material-ui/core";
-import Lottie from 'react-lottie';
-import {animationData} from '../lottie/iconsx-digital-marketing/data';
+import Lottie from "lottie-react-web";
+import animation from "../lottie/digital-marketing.json";
 
 export const Landing: React.FC = () => {
-  const defaultOptions = {
+
+  const options = {
     loop: true,
     autoplay: true,
-    animationData: animationData,
+    animationData: animation,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice'
     }
@@ -20,7 +21,9 @@ export const Landing: React.FC = () => {
         <div className="py-5">
           <Container>
             <Typography variant="h1">Título</Typography>
-            <Lottie options={defaultOptions} height={400} width={400}/>
+            <Lottie options={options}
+                    height={400}
+                    width={400}/>
           </Container>
         </div>
       </div>
