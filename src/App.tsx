@@ -1,8 +1,7 @@
 import React from 'react';
-import {useHistory} from "react-router-dom";
+import {Redirect, Route, Switch, useHistory} from "react-router-dom";
 import ReactGA from 'react-ga';
 import './css/style.scss';
-
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {fas} from '@fortawesome/free-solid-svg-icons';
 
@@ -29,7 +28,12 @@ function App() {
 
   return (
     <ThemeProvider theme={MuiTheme}>
-      <Landing/>
+      <Switch>
+        <Route exact path="/">
+          <Landing/>
+        </Route>
+        <Redirect from="*" to="/"/>
+      </Switch>
     </ThemeProvider>
   );
 }

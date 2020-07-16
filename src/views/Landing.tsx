@@ -1,8 +1,9 @@
 import React from "react";
-import {Container, List, ListItem, Typography} from "@material-ui/core";
+import {Container} from "@material-ui/core";
 import Lottie from "lottie-react-web";
 import animation from "../lottie/digital-marketing.json";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+
+import meet from '../img/meet1.png';
 
 export const Landing: React.FC = () => {
 
@@ -39,9 +40,7 @@ export const Landing: React.FC = () => {
               </div>
             </div>
 
-
-
-
+            <img alt="meet" src={meet} style={{width: "300px"}}/>
 
             <div className="text-center d-block text-black-50 pb-4 footer">
               <a href="http://www.open-data.cl">Open-Data Chile</a> © 2020 Creative Labs - Powered by <a href="https://aws.amazon.com/">AWS</a>
