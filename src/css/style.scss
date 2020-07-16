@@ -4,11 +4,19 @@ body {
   font-family: 'Scope One', serif;
 
 }
+.figure {
+  position: absolute;
+  right: 0;
+  width: 60%;
+}
 h1 {
   font-size: 60px;
   span{
     color: #FFE800;
   }
+}
+.MuiTypography-subtitle1 {
+  width: 40%;
 }
 
 
@@ -16,6 +24,7 @@ h1 {
 @media (min-width: 1100px) {
   .MuiContainer-maxWidthLg {
     max-width: 1100px;
+    position: relative;
   }
 }
 
