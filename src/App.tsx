@@ -4,30 +4,21 @@ import ReactGA from 'react-ga';
 import './css/style.scss';
 
 import {library} from '@fortawesome/fontawesome-svg-core';
-import {
-  faAngleRight,
-  faCheck,
-  faDollarSign,
-  faExclamation,
-  fas,
-  faSuitcase,
-  faTimes
-} from '@fortawesome/free-solid-svg-icons';
+import {fas} from '@fortawesome/free-solid-svg-icons';
 
 import {Landing} from "./views/Landing";
 
 import {ThemeProvider} from '@material-ui/styles';
 
 import MuiTheme from './theme';
+import {fab, faFacebook, faInstagram, faTwitter} from "@fortawesome/free-brands-svg-icons";
 
 library.add(
+  fab,
   fas,
-  faCheck,
-  faDollarSign,
-  faExclamation,
-  faSuitcase,
-  faTimes,
-  faAngleRight
+  faFacebook,
+  faTwitter,
+  faInstagram
 );
 
 function App() {
