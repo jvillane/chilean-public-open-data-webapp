@@ -11,13 +11,14 @@ import {Landing} from "./views/Landing";
 import {ThemeProvider} from '@material-ui/styles';
 
 import MuiTheme from './theme';
-import {fab, faFacebook, faInstagram, faTwitter} from "@fortawesome/free-brands-svg-icons";
+import {fab, faFacebook, faGithub, faInstagram, faTwitter} from "@fortawesome/free-brands-svg-icons";
 
 library.add(
   fab,
   fas,
   faArrowRight,
   faFacebook,
+  faGithub,
   faThumbsDown,
   faThumbsUp,
   faTwitter,

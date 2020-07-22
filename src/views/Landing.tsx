@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, Container, Grid} from "@material-ui/core";
+import {Button, Container, Grid, Tooltip} from "@material-ui/core";
 import Lottie from "lottie-react-web";
 import animation from "../lottie/digital-marketing.json";
 
@@ -22,6 +22,62 @@ export const Landing: React.FC = () => {
     <main className="hero-wrapper--content">
       <div className="bg-composed-wrapper--bg"/>
       <div className="bg-composed-wrapper--content">
+        <div className="social-networks mr-5">
+          <Container>
+            <Grid container direction="row" justify="flex-end" alignItems="center">
+              <Tooltip arrow title="Facebook">
+                <Button
+                  className="m-2 d-30 p-0 btn-pill btn-icon btn-facebook"
+                  href="https://www.facebook.com/Chile-Open-Data-106864307755244"
+                  rel="noopener nofollow"
+                  target="_blank">
+                  <FontAwesomeIcon
+                    icon={['fab', 'facebook']}
+                    className="font-size-lg"
+                  />
+                </Button>
+              </Tooltip>
+              <Tooltip arrow title="Twitter">
+                <Button
+                  className="m-2 d-30 p-0 btn-pill btn-icon btn-twitter"
+                  href="https://twitter.com/chileopendata"
+                  rel="noopener nofollow"
+                  target="_blank">
+                  <FontAwesomeIcon
+                    icon={['fab', 'twitter']}
+                    className="font-size-lg"
+                  />
+                </Button>
+              </Tooltip>
+              <Tooltip arrow title="Instagram">
+                <Button
+                  className="m-2 d-30 p-0 btn-pill btn-icon btn-instagram"
+                  href="https://www.instagram.com/chileopendata"
+                  rel="noopener nofollow"
+                  target="_blank">
+                  <FontAwesomeIcon
+                    icon={['fab', 'instagram']}
+                    className="font-size-lg"
+                  />
+                </Button>
+              </Tooltip>
+              <Tooltip arrow title="Github">
+                <Button
+                  className="m-2 d-30 p-0 btn-pill btn-github border-github"
+                  variant="outlined"
+                  color="default"
+                  href="https://github.com/jvillane"
+                  rel="noopener nofollow"
+                  target="_blank">
+                  <FontAwesomeIcon
+                    icon={['fab', 'github']}
+                    className="font-size-lg"
+                  />
+                </Button>
+              </Tooltip>
+            </Grid>
+          </Container>
+        </div>
         <div className="title">
           <Container>
             <Grid container spacing={6} className="py-5">
@@ -50,10 +106,12 @@ export const Landing: React.FC = () => {
                     legislativo.open-data.cl
                   </h1>
                   <p className="title-paragraph">
-                    Información sobre los últimos proyectos votados en las cámaras de diputados y senadores, y quienes votaron por ellos
+                    Información sobre los últimos proyectos votados en las cámaras de diputados y senadores, y quienes
+                    votaron por ellos
                   </p>
                   <a href="http://legislativo.open-data.cl">
-                    <Button className="btn-pill">Visitar legislativo&nbsp;&nbsp;<FontAwesomeIcon icon={['fas', 'arrow-right']}/></Button>
+                    <Button className="btn-pill">Visitar legislativo&nbsp;&nbsp;<FontAwesomeIcon
+                      icon={['fas', 'arrow-right']}/></Button>
                   </a>
                 </Grid>
               </Grid>
@@ -86,6 +144,58 @@ export const Landing: React.FC = () => {
         </div>
         <div className="footer py-5">
           <Container>
+            <Grid container direction="row" justify="center" alignItems="center" className="mt-3 mb-5">
+              <Tooltip arrow title="Facebook">
+                <Button
+                  className="m-2 d-30 p-0 btn-pill btn-icon btn-facebook"
+                  href="https://www.facebook.com/Chile-Open-Data-106864307755244"
+                  rel="noopener nofollow"
+                  target="_blank">
+                  <FontAwesomeIcon
+                    icon={['fab', 'facebook']}
+                    className="font-size-lg"
+                  />
+                </Button>
+              </Tooltip>
+              <Tooltip arrow title="Twitter">
+                <Button
+                  className="m-2 d-30 p-0 btn-pill btn-icon btn-twitter"
+                  href="https://twitter.com/chileopendata"
+                  rel="noopener nofollow"
+                  target="_blank">
+                  <FontAwesomeIcon
+                    icon={['fab', 'twitter']}
+                    className="font-size-lg"
+                  />
+                </Button>
+              </Tooltip>
+              <Tooltip arrow title="Instagram">
+                <Button
+                  className="m-2 d-30 p-0 btn-pill btn-icon btn-instagram"
+                  href="https://www.instagram.com/chileopendata"
+                  rel="noopener nofollow"
+                  target="_blank">
+                  <FontAwesomeIcon
+                    icon={['fab', 'instagram']}
+                    className="font-size-lg"
+                  />
+                </Button>
+              </Tooltip>
+              <Tooltip arrow title="Github">
+                <Button
+                  className="m-2 d-30 p-0 btn-pill btn-github border-github"
+                  variant="outlined"
+                  color="default"
+                  href="https://github.com/jvillane"
+                  rel="noopener nofollow"
+                  target="_blank">
+                  <FontAwesomeIcon
+                    icon={['fab', 'github']}
+                    className="font-size-lg"
+                  />
+                </Button>
+              </Tooltip>
+            </Grid>
             <Grid container direction="row" justify="space-between" alignItems="center">
               <span>2020 open-data.cl - Todos los derechos reservados</span>
               <span><a href="mailto:contacto@open-data.cl">contacto@open-data.cl</a></span>
