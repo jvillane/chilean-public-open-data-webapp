@@ -1,9 +1,10 @@
 import React from 'react';
 import {Redirect, Route, Switch, useHistory} from "react-router-dom";
 import ReactGA from 'react-ga';
+import './assets/base.scss';
 import './css/style.scss';
 import {library} from '@fortawesome/fontawesome-svg-core';
-import {fas} from '@fortawesome/free-solid-svg-icons';
+import {faArrowRight, fas, faThumbsDown, faThumbsUp} from '@fortawesome/free-solid-svg-icons';
 
 import {Landing} from "./views/Landing";
 
@@ -15,7 +16,10 @@ import {fab, faFacebook, faInstagram, faTwitter} from "@fortawesome/free-brands-
 library.add(
   fab,
   fas,
+  faArrowRight,
   faFacebook,
+  faThumbsDown,
+  faThumbsUp,
   faTwitter,
   faInstagram
 );

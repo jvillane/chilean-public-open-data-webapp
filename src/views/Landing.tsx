@@ -1,9 +1,11 @@
 import React from "react";
-import {Container} from "@material-ui/core";
+import {Button, Container, Grid} from "@material-ui/core";
 import Lottie from "lottie-react-web";
 import animation from "../lottie/digital-marketing.json";
 
-import meet from '../img/meet1.png';
+import name from '../img/name.png';
+import votacion from '../img/votacion.png';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export const Landing: React.FC = () => {
 
@@ -18,37 +20,77 @@ export const Landing: React.FC = () => {
 
   return (
     <main className="hero-wrapper--content">
-      <div className="bg-composed-wrapper--bg bg-white opacity-5"/>
+      <div className="bg-composed-wrapper--bg"/>
       <div className="bg-composed-wrapper--content">
-        <div className="py-5">
+        <div className="title">
           <Container>
-            <div className="top">
-              <div className="figure">
-                <Lottie options={options}/>
+            <Grid container spacing={6} className="py-5">
+              <Grid item md={6}>
+                <Grid container direction="column" justify="center" alignItems="flex-start">
+                  <img src={name} alt="..."/>
+                  <p className="title-paragraph">
+                    Disponemos <b>datos públicos chilenos</b> en un <b>formato fácil</b> de consumir y comprender con
+                    el
+                    fin de <b>aportar al conocimiento</b> colectivo
+                  </p>
+                </Grid>
+              </Grid>
+              <Grid item md={6} className="py-0">
+                <Lottie options={options} width={400} height={400}/>
+              </Grid>
+            </Grid>
+          </Container>
+        </div>
+        <div className="projects mb-5">
+          <Container>
+            <Grid container spacing={6} className="py-5">
+              <Grid item md={6}>
+                <Grid container direction="column" justify="center" alignItems="flex-start">
+                  <h1>
+                    legislativo.open-data.cl
+                  </h1>
+                  <p className="title-paragraph">
+                    Información sobre los últimos proyectos votados en las cámaras de diputados y senadores, y quienes votaron por ellos
+                  </p>
+                  <Button className="btn-pill">Visitar legislativo&nbsp;&nbsp;<FontAwesomeIcon icon={['fas', 'arrow-right']}/></Button>
+                </Grid>
+              </Grid>
+              <Grid item md={6} className="py-0">
+                <img src={votacion} alt="..."/>
+              </Grid>
+            </Grid>
+          </Container>
+        </div>
+        <div className="terms py-5">
+          <Container className="text-center">
+            <h1>Términos y Condiciones</h1>
+            <p>¿Quieres utilizar en tu proyecto la información que hacemos disponible en nuestro portal?
+              Tenemos una serie de principios para definir los usos posibles</p>
+            <Grid container direction="row" justify="center" alignItems="center" className="term-item">
+              <div className="question font-weight-bolder mx-3">
+                ¿Eres un privado con una idea sin fines de lucro?
               </div>
-              <div className="text">
-                <h1>open<span>-</span>data<span>.</span>cl</h1>
-                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur,
-                  tellus a convallis aliquam, </p>
+              <div className="answer mx-3">
+                ¡Dale!
               </div>
-            </div>
-            <div className="bottom">
-              <div className="campain"></div>
-              <div className="cta">
-
+            </Grid>
+            <Grid container direction="row" justify="center" alignItems="center" className="term-item">
+              <div className="question font-weight-bolder mx-3">
+                ¿Quieres cobrar un servicio directo o indirecto usando nuestro trabajo?
               </div>
-            </div>
-
-            <img alt="meet" src={meet} style={{width: "300px"}}/>
-
-            <div className="text-center d-block text-black-50 pb-4 footer">
-              <a href="http://www.open-data.cl">Open-Data Chile</a> © 2020 Creative Labs - Powered by <a href="https://aws.amazon.com/">AWS</a>
-            </div>
+              <div className="answer mx-3">Conversemos antes</div>
+            </Grid>
+          </Container>
+        </div>
+        <div className="footer py-5">
+          <Container>
+            <Grid container direction="row" justify="space-between" alignItems="center">
+              <span>2020 open-data.cl - Todos los derechos reservados</span>
+              <span><a href="mailto:contacto@open-data.cl">contacto@open-data.cl</a></span>
+            </Grid>
           </Container>
         </div>
       </div>
-
     </main>
   )
 }

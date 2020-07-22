@@ -1,74 +1,107 @@
 body {
   background: #fff;
   color: #193E6F;
-  font-family: Heebo,sans-serif;
+  font-family: Karla;
 }
-.top {
-  background: #193E6F;
-  border-radius: 30px;
-  color: #fff;
-  margin-bottom: 40px;
-  margin-top: 40px;
-  min-height: 400px;
-  padding: 1px 40px;
-  position: relative;
-  height: 40vh;
-}
-.figure {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 40%;
-}
-.text {
-  width: 60%;
-}
-h1 {
-  font-family: 'Scope One', serif;
-  font-size: 60px;
-  span{
-    color: #FFE800;
+
+div.title {
+  img {
+    height: 51px;
+    margin-top: 40px;
+    margin-bottom: 30px;
   }
-}
-.bottom {
-  font-size: 0;
-  margin-bottom: 40px;
-  & > div {
-    border: 1px solid #6485B3;
-    border-radius: 30px;
-    display: inline-block;
-    font-size: 18px;
-    width: calc(50% - 20px);
-    min-height: 300px;
-  }
-  .campain {
-    margin-right: 36px;
-  }
-}
-.MuiListItem-button {
-  display: inline-block;
-}
-.footer{
-  color: #000;
-  text-align: center;
-  a {
-    color: #0B284F;
-    font-size: 16px;
+
+  p.title-paragraph {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 130%;
+    color: #344058;
   }
 }
 
+div.projects {
+  background: linear-gradient(157.42deg, #43ADC7 8.28%, #3381DE 68.02%, #FF1A88 151.18%);
 
+  h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 39px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
 
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
 
-@media (min-width: 1100px) {
-  .MuiContainer-maxWidthLg {
-    max-width: 1100px;
+  button {
+    font-family: Karla;
+    background: #FFFFFF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344058;
+  }
+
+  img {
+    height: 190px;
+    margin-top: 40px;
+    margin-bottom: 30px;
   }
 }
 
-@media (min-width: 576px) {
-  .MuiContainer-root {
-    padding-left: 24px;
-    padding-right: 24px;
+div.terms {
+
+  color: #344058;
+
+  h1 {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 39px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .term-item {
+    margin-bottom: 20px;
+    font-family: Karla;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 28px;
+    .question {
+      font-weight: bold;
+    }
+  }
+}
+
+div.footer {
+  background: #344058;
+
+  span, a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FAFBFD;
   }
 }
