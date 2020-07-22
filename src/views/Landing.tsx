@@ -52,7 +52,9 @@ export const Landing: React.FC = () => {
                   <p className="title-paragraph">
                     Información sobre los últimos proyectos votados en las cámaras de diputados y senadores, y quienes votaron por ellos
                   </p>
-                  <Button className="btn-pill">Visitar legislativo&nbsp;&nbsp;<FontAwesomeIcon icon={['fas', 'arrow-right']}/></Button>
+                  <a href="http://legislativo.open-data.cl">
+                    <Button className="btn-pill">Visitar legislativo&nbsp;&nbsp;<FontAwesomeIcon icon={['fas', 'arrow-right']}/></Button>
+                  </a>
                 </Grid>
               </Grid>
               <Grid item md={6} className="py-0">
